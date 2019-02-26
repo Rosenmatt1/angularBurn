@@ -18,7 +18,7 @@ export class CounterComponent implements OnInit {
 
   increment = () => this.count++
 
-  updateItem(e) {
+  updateItem(e:any) {
     this.newText = e.target.value
   }
   
