@@ -1,10 +1,15 @@
+Update Count: {{count}}
+  <button (click)="increment()">Click to Increment</button>
+
+  <div class="sandbox">
+    <input (input)="updateItem($event)"/>
+    <button>Type Here</button>
+
+    <br>
+    <div>
+      {{newText}}
+    </div>
+
+  </div>
 
 
-Count: {{counter}}
-
-<div *ngIf="season8"> Welcome to the Season 8 Premiere!
-</div>
-
-
-<button (click)="bump()">Click to Increment</button>
-<!-- <button (click)="reveal()">New Season</button> -->

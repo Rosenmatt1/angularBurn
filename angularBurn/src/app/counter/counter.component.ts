@@ -9,13 +9,19 @@ export class CounterComponent implements OnInit {
 
   constructor() { }
 
-  counter: number = 0
+  count:number = 0
+  newText:string = ""
 
+ 
   ngOnInit() {
   }
 
-  bump() {
-    this.counter++
+  increment = () => this.count++
+
+  updateItem(e) {
+    this.newText = e.target.value
   }
+  
+
 
 }
