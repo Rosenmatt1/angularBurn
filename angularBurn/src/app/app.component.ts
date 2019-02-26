@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularBurn';
-  counter:number = 0
 
-  bump() {
-    this.counter++
+  season8:boolean = false
+
+  
+
+  reveal() {
+    this.season8 = !this.season8
   }
 
 }
